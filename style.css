@@ -66,3 +66,7 @@ button:hover {
 input:focus {
     outline: none;
 }
+
+#note {
+    width: 290px;
+}
