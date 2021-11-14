@@ -71,3 +71,9 @@ input:focus {
     display: inline-block;
     width: 290px;
 }
+
+#facebook-img, #github-img {
+    height: 32px;
+    width: 32px;
+}
+
