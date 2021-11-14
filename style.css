@@ -1,71 +1,68 @@
-bwthBtn = document.getElementById("bwth-btn")
-osasBtn = document.getElementById("osas-btn")
-bpBtn = document.getElementById("bp-btn")
-atpBtn = document.getElementById("atp-btn")
-mgsBtn = document.getElementById("mgs-btn")
-bwthCopyBtn = document.getElementById("bwth-copy-btn")
-osasCopyBtn = document.getElementById("osas-copy-btn")
-bpCopyBtn = document.getElementById("bp-copy-btn")
-atpCopyBtn = document.getElementById("atp-copy-btn")
-mgsCopyBtn = document.getElementById("mgs-copy-btn")
-kjvInput = document.getElementById("kjv-input")
-
-function copyLink(btn, link) {
-    navigator.clipboard.writeText(link);
-    btn.innerText = "Copied!"
+body {
+    background-color: #121212;
+    color: #DFDFDF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    min-width: 300px;
+    max-width: 400px;
 }
 
-function openLink(url) {
-    window.open(url, "_blank")
+div {
+    margin: 2px 0px 2px 0px;
 }
 
-// Open Link Buttons
-bwthBtn.addEventListener("click", function() {
-    openLink("https://youtu.be/CLTAqJavYZU")
-})
+button {
+    background-color: #1E1E1E;
+    color: #DFDFDF;
+    margin: 2px;
+    border: 1px solid #4b4b4b;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
 
-osasBtn.addEventListener("click", function() {
-    openLink("https://youtu.be/3Qe2iQE2ImQ")
-})
+input {
+    background-color: #1E1E1E;
+    color: #DFDFDF;
+    margin: 2px;
+    border: 1px solid #4b4b4b;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 254px;
+    height: 20px;
+}
 
-bpBtn.addEventListener("click", function() {
-    openLink("https://bannedpreaching.com/")
-})
+#info {
+    display: inline-block;
+    width: 200px;
+}
 
-atpBtn.addEventListener("click", function() {
-    openLink("https://allthepreaching.com/")
-})
+#psa-div {
+    display: inline-block;
+}
 
-mgsBtn.addEventListener("click", function() {
-    openLink("https://militarygetsaved.tripod.com/findchurch.html")
-})
+#kjv {
+    display: inline-block;
+}
 
-// Copy Link Buttons
-bwthCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://youtu.be/CLTAqJavYZU")
-})
+#links {
+    display: inline-block;
+}
 
-osasCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://youtu.be/3Qe2iQE2ImQ")
-})
+.open-btn {
+    width: 200px;
+    height: 40px;
+}
 
-bpCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://bannedpreaching.com/")
-})
+.copy-btn {
+    width: 80px;
+    height: 40px;
+}
 
-atpCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://allthepreaching.com/")
-})
+button:hover {
+    background-color: #4b4b4b;
+}
 
-mgsCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://militarygetsaved.tripod.com/findchurch.html")
-})
-
-kjvInput.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-        let search = kjvInput.value
-        if (search) {
-            openLink("https://www.biblegateway.com/quicksearch/?quicksearch=" + search + "&version=KJV")
-        }
-    }
-})
+input:focus {
+    outline: none;
+}
