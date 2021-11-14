@@ -66,3 +66,8 @@ button:hover {
 input:focus {
     outline: none;
 }
+
+#socials {
+    display: inline-block;
+    width: 290px;
+}
