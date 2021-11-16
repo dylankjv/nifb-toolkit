@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>NIFB Toolkit</title>
 </head>
@@ -11,11 +10,19 @@
 <body>
     <div id="info">
         <h1>NIFB Toolkit</h1>
-        <p>Last updated: 14/11/2021 (v1.1.1)</p>
+        <p>Last updated: 15/11/2021 (v1.2.0)</p>
     </div>
-    <div id="psa-div">
+    <div id="psa">
         <img id="psa-img" src="psa.png">
     </div>
+    <hr>
+    <div id="tabs">
+        <button id="links-tab">Links</button>
+        <button id="livestreams-tab">Livestreams</button>
+        <button id="events-tab">Events</button>
+        <button id="contact-tab">Contact</button>
+    </div>
+    <hr>
     <div id="links">
         <div id="bwth">
             <button id="bwth-btn" class="open-btn">The Bible Way To Heaven</button>
@@ -38,10 +45,12 @@
             <button id="mgs-copy-btn" class="copy-btn">Copy Link</button>
         </div>
     </div>
+    <hr>
     <div id="kjv">
         <label>KJV: </label>
         <input id="kjv-input" placeholder="Enter passage, keyword, or topic">
     </div>
+    <hr>
     <div id="socials">
         <a href="https://www.facebook.com/NIFBToolkit/" target="_blank"><img id="facebook-img" title="Facebook"
                 src="facebook.png"></a>
@@ -50,5 +59,6 @@
     </div>
 </body>
 <script src="main.js"></script>
+<script src="links.js"></script>
 
 </html>

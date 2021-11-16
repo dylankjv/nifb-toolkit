@@ -1,71 +1,40 @@
-bwthBtn = document.getElementById("bwth-btn")
-osasBtn = document.getElementById("osas-btn")
-bpBtn = document.getElementById("bp-btn")
-atpBtn = document.getElementById("atp-btn")
-mgsBtn = document.getElementById("mgs-btn")
-bwthCopyBtn = document.getElementById("bwth-copy-btn")
-osasCopyBtn = document.getElementById("osas-copy-btn")
-bpCopyBtn = document.getElementById("bp-copy-btn")
-atpCopyBtn = document.getElementById("atp-copy-btn")
-mgsCopyBtn = document.getElementById("mgs-copy-btn")
-kjvInput = document.getElementById("kjv-input")
+linksTab = document.getElementById("links-tab")
+eventsTab = document.getElementById("events-tab")
+livestreamsTab = document.getElementById("livestreams-tab")
+contactTab = document.getElementById("contact-tab")
 
-function copyLink(btn, link) {
-    navigator.clipboard.writeText(link);
-    btn.innerText = "Copied!"
+// Highlight selected tab
+if (window.location.pathname === "/index.html") {
+    linksTab.style.backgroundColor = "#1E1E1E"
+    linksTab.style.border = "1px solid #4b4b4b"
+    linksTab.style.color = "#DFDFDF"
+} else if (window.location.pathname === "/livestreams.html") {
+    livestreamsTab.style.backgroundColor = "#1E1E1E"
+    livestreamsTab.style.border = "1px solid #4b4b4b"
+    livestreamsTab.style.color = "#DFDFDF"
+} else if (window.location.pathname === "/events.html") {
+    eventsTab.style.backgroundColor = "#1E1E1E"
+    eventsTab.style.border = "1px solid #4b4b4b"
+    eventsTab.style.color = "#DFDFDF"
+} else {
+    contactTab.style.backgroundColor = "#1E1E1E"
+    contactTab.style.border = "1px solid #4b4b4b"
+    contactTab.style.color = "#DFDFDF"
 }
 
-function openLink(url) {
-    window.open(url, "_blank")
-}
-
-// Open Link Buttons
-bwthBtn.addEventListener("click", function() {
-    openLink("https://youtu.be/CLTAqJavYZU")
+// Tab buttons
+linksTab.addEventListener("click", function() {
+    location.href="index.html"
 })
 
-osasBtn.addEventListener("click", function() {
-    openLink("https://youtu.be/3Qe2iQE2ImQ")
+eventsTab.addEventListener("click", function() {
+    location.href="events.html"
 })
 
-bpBtn.addEventListener("click", function() {
-    openLink("https://bannedpreaching.com/")
+livestreamsTab.addEventListener("click", function() {
+    location.href="livestreams.html"
 })
 
-atpBtn.addEventListener("click", function() {
-    openLink("https://allthepreaching.com/")
-})
-
-mgsBtn.addEventListener("click", function() {
-    openLink("https://militarygetsaved.tripod.com/findchurch.html")
-})
-
-// Copy Link Buttons
-bwthCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://youtu.be/CLTAqJavYZU")
-})
-
-osasCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://youtu.be/3Qe2iQE2ImQ")
-})
-
-bpCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://bannedpreaching.com/")
-})
-
-atpCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://allthepreaching.com/")
-})
-
-mgsCopyBtn.addEventListener("click", function() {
-    copyLink(this, "https://militarygetsaved.tripod.com/findchurch.html")
-})
-
-kjvInput.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-        let search = kjvInput.value
-        if (search) {
-            openLink("https://www.biblegateway.com/quicksearch/?quicksearch=" + search + "&version=KJV")
-        }
-    }
+contactTab.addEventListener("click", function() {
+    location.href="contact.html"
 })

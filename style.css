@@ -4,7 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 div {
@@ -21,6 +21,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #4b4b4b;
+}
+
 input {
     background-color: #1E1E1E;
     color: #DFDFDF;
@@ -32,17 +36,41 @@ input {
     height: 20px;
 }
 
+input:focus {
+    outline: none;
+}
+
+hr {
+    display: inline-block;
+    width: 300px;
+    border-color: #4b4b4b;
+}
+
+a {
+    color: #DFDFDF;
+}
+
 #info {
     display: inline-block;
     width: 200px;
 }
 
-#psa-div {
+#psa {
     display: inline-block;
 }
 
-#kjv {
-    display: inline-block;
+#tabs {
+    width: 286px;
+}
+
+#tabs button {
+    color:  #a9a9a9;
+    border: none;
+    background-color: #121212;
+}
+
+#tabs button:hover {
+    color: #DFDFDF;
 }
 
 #links {
@@ -59,12 +87,8 @@ input {
     height: 40px;
 }
 
-button:hover {
-    background-color: #4b4b4b;
-}
-
-input:focus {
-    outline: none;
+#kjv {
+    display: inline-block;
 }
 
 #socials {
@@ -72,8 +96,16 @@ input:focus {
     width: 290px;
 }
 
-#facebook-img, #github-img {
+#socials img {
     height: 32px;
     width: 32px;
 }
 
+#livestream-links a {
+    display: block;
+    margin-bottom: 4px;
+}
+
+#contact-form form{
+    display: block;
+}
