@@ -21,6 +21,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #4b4b4b;
+}
+
 select {
     background-color: #1E1E1E;
     color: #DFDFDF;
@@ -32,10 +36,6 @@ select {
     height: 40px;
     cursor: pointer;
     text-align: center;
-}
-
-button:hover {
-    background-color: #4b4b4b;
 }
 
 input {
