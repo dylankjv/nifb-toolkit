@@ -27,6 +27,9 @@ function copyLink(btn, link) {
             case "cebuano":
                 link = "https://youtu.be/7D9Wsbdr9Vk"
                 break
+            case "czech":
+                link = "https://youtu.be/1M7SoPWm4cM"
+                break
             case "mandarin":
                 link = "https://youtu.be/FSfolYsWmh4"
                 break
