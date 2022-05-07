@@ -2,6 +2,10 @@ linksTab = document.getElementById("links-tab")
 eventsTab = document.getElementById("events-tab")
 livestreamsTab = document.getElementById("livestreams-tab")
 contactTab = document.getElementById("contact-tab")
+updateText = document.getElementById("update-text")
+
+let lastUpdated = "Last updated: May 7, 2022 (v1.4.0)"
+updateText.innerHTML = lastUpdated
 
 // Highlight selected tab
 if (window.location.pathname === "/index.html") {
