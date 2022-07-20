@@ -4,7 +4,7 @@ livestreamsTab = document.getElementById("livestreams-tab")
 contactTab = document.getElementById("contact-tab")
 updateText = document.getElementById("update-text")
 
-let lastUpdated = "Last updated: May 8, 2022 (v1.4.2)"
+let lastUpdated = "Last updated: July 20, 2022 (v1.4.3)"
 updateText.innerHTML = lastUpdated
 
 // Highlight selected tab
